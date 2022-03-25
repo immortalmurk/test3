@@ -1,0 +1,107 @@
+
+body{
+  text-align: center;
+  background-color: lightpink;
+}
+
+.indicator1{
+  width: 1200px;
+  height: 40px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(3, 0, 0);
+  margin:10px auto ;
+}
+
+.indicator2{
+  width: 10px;
+  height: 40px;
+  background-color: rgb(37, 3, 129);
+  position: inherit;
+  transition: 5s linear;
+}
+
+.indicator2:hover{
+  width: 1200px;
+}
+.circlePath{
+  width: 100%;
+  height: 550px;
+}
+
+.circle{
+  width: 100px;
+  height: 100px;
+  background: #0258a8;
+  border-radius: 50%;
+  animation: circleRun 10s infinite ease-in-out;
+}
+
+@keyframes circleRun{
+  0%, 100% {
+    float: left;
+    background: #1216eb;
+  }
+  25%{ transform: translateX(93vw); background: rgb(51, 1, 47);}
+  50% {transform: translateX(93vw) translateY(400px); background: rgb(0, 41, 0);}
+  75% {transform: translateX(0px) translateY(400px);  background: rgb(245, 16, 8);}
+
+}
+
+#grow{
+  line-height: 100px;
+  font-size: 20px;
+}
+#link1{
+  color: red;
+}
+#link2{
+  color:rgb(5, 166, 172);
+}
+#link3{
+  color: yellow;
+}
+#grow a{
+  display: inline-block;
+}
+#grow :hover{
+    font-size: 30px;  
+    transition: 1s;
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    
+}
+div.container{
+  width: 800px;
+  height: 800px;
+  display: inline-block;
+  align-items: center;
+  position: relative;
+}
+.couud1{
+  position:absolute;
+  z-index: 10;
+}
+.rain{
+  width: 630px;
+  height: 400px;
+  position: absolute;
+  margin-top: 280px;
+  margin-left: 50px;
+}
+.rain:hover{
+  background: url(rain.png);
+  opacity: 0.5;
+  animation: rain 3s ease-in infinite;
+}
+
+@keyframes rain{
+  0%{
+    background-position: 20% 100%;
+  }
+  100%{
+    background-position: 0% 0%;
+  }
+
+}
+
+
